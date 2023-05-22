@@ -11,5 +11,11 @@
     <a href="/member/login" th:if="${member == null}">로그인</a>
     <a href="/member/logout" th:if="${member != null}">로그아웃</a>
     <a href="/member">회원 목록</a>
+    <button onclick="saveReq()">글작성</button>
 </body>
+<script>
+    const saveReq = () => {
+        location.href = "/board/saveBoard";
+    }
+</script>
 </html>
